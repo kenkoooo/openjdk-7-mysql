@@ -16,5 +16,6 @@ RUN apt-get -y install openjdk-8-jdk
 RUN apt-get -y install memcached
 RUN apt-get -y install gradle
 
+ENV JAVA_TOOL_OPTIONS -Dfile.encoding=UTF8
 
 CMD ["mysqld_safe"]
