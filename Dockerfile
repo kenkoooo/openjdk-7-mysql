@@ -12,7 +12,7 @@ RUN sed -i -e "s/\(\[client\]\)/\1\ndefault-character-set = utf8/g" /etc/mysql/m
 RUN sed -i -e "s/\(\[mysqldump\]\)/\1\ndefault-character-set = utf8/g" /etc/mysql/my.cnf
 RUN sed -i -e "s/\(\[mysql\]\)/\1\ndefault-character-set = utf8/g" /etc/mysql/my.cnf
 
-RUN apt-get -y install openjdk-9-jdk
+RUN apt-get -y install openjdk-8-jdk
 RUN apt-get -y install memcached
 
 CMD ["mysqld_safe"]
