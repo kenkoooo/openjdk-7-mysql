@@ -15,6 +15,7 @@ RUN sed -i -e "s/\(\[mysql\]\)/\1\ndefault-character-set = utf8/g" /etc/mysql/my
 RUN apt-get -y install openjdk-8-jdk
 RUN apt-get -y install memcached
 RUN apt-get -y install gradle
+RUN apt-get -y install git
 
 ENV JAVA_TOOL_OPTIONS -Dfile.encoding=UTF8
 
